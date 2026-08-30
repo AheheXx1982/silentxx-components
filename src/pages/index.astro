@@ -1,0 +1,41 @@
+---
+// 组件库演示页 — 验证组件可独立编译运行
+import GlobalMusicPlayer from '@components/music/GlobalMusicPlayer-EyeVersion.astro';
+import ThemeToggle from '@components/theme/ThemeToggle.astro';
+import QuoteMarquee from '@components/fun/QuoteMarquee.astro';
+import StarryBackground from '@components/StarryBackground.astro';
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SilentXx Components Demo</title>
+    <style>
+      body { font-family: system-ui, sans-serif; background: #0a0d16; color: #e2e8f0; padding: 2rem; }
+      h1 { color: #22d3ee; }
+      .card { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 1.5rem; margin: 1rem 0; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+    </style>
+  </head>
+  <body>
+    <StarryBackground />
+    <h1>🎨 SilentXx Components Demo</h1>
+    <p>从 silentxx.com 主题提取的开源组件演示</p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>🎵 大眼睛音乐播放器</h2>
+        <GlobalMusicPlayer />
+      </div>
+      <div class="card">
+        <h2>🌓 主题切换</h2>
+        <ThemeToggle />
+      </div>
+      <div class="card">
+        <h2>💬 名言跑马灯</h2>
+        <QuoteMarquee />
+      </div>
+    </div>
+  </body>
+</html>

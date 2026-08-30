@@ -1,0 +1,30 @@
+{
+  "name": "silentxx-components",
+  "version": "0.1.0",
+  "description": "SilentXx open-source Astro components: eye music player, theme toggle, language switcher, fun effects, blog components.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": ["astro", "components", "silentxx", "music-player", "theme"],
+  "license": "MIT",
+  "peerDependencies": {
+    "astro": "^5.0.0 || ^6.0.0 || ^7.0.0",
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "@astrojs/react": "^6.0.2",
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "astro": "^7.1.6",
+    "typescript": "^5.9.2"
+  }
+}
